@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
         // response to button
         Intent intent = new Intent(this, DisplayMessageActivity.class);
         EditText editText = (EditText) findViewById(R.id.editText);
+        // Message pass as an extra
         String message = editText.getText().toString();
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
